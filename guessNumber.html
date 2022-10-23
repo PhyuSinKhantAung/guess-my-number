@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess my number</title>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Silkscreen&display=swap");
+    </style>
+    <link rel="stylesheet" href="guessNumber.css" />
+  </head>
+  <body class="bg-black bg-opacity-100">
+    <section>
+      <div class="container">
+        <div class="d-flex row p-5">
+          <h1 class="text-center col-12">Guess My Number!</h1>
+        </div>
+      </div>
+      <div class="bar mt-4 position-relative">
+        <div
+          class="luckyNumber position-absolute bg-black p-2 fs-2 top-0 start-50 translate-middle"
+        >
+          ??
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="d-flex flex-column align-items-center">
+              <input
+                type="number"
+                value=""
+                class="guessInput p-1 mt-5 mx-auto d-block rounded-0"
+              />
+              <div class="mt-5">
+                <button class="check px-2 py-1" type="submit">check</button>
+                <button class="again px-2 py-1 d-none" type="submit">
+                  again
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="d-flex flex-column mt-5 align-items-center">
+              <h4 class="hints text-center">Guess number between 0 and 20!</h4>
+              <div class="d-flex flex-column mt-5 align-items-center">
+                <div class="mb-3">
+                  <img
+                    src="/imgs/score.png"
+                    alt=""
+                    class="img-fluid scoreImg"
+                  />
+                  Scores:
+                  <span class="fs-4 score text-decoration-underline">10</span>
+                </div>
+                <div>
+                  <img
+                    src="/imgs/achievement.png"
+                    alt=""
+                    class="img-fluid scoreImg"
+                  />
+                  highscore:
+                  <span class="fs-4 highscore text-decoration-underline"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/guessNumber.js"></script>
+  </body>
+</html>
